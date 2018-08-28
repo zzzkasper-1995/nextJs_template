@@ -1,9 +1,9 @@
-import React, { PureComponent } from 'react';
-import './style.css';
+import React, { PureComponent } from 'react'
+import './style.css'
 
 class Item2 extends PureComponent {
     render() {
-        const { title } = this.props;
+        const { title } = this.props
         return (
             <div className="item2">
                 <div className="title">
@@ -12,6 +12,6 @@ class Item2 extends PureComponent {
             </div>
         )
     }
-};
+}
 
-export default Item2;
+export default Item2
