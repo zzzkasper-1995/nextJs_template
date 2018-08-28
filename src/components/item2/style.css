@@ -1,0 +1,9 @@
+.item2 {
+  margin: 20px;
+}
+
+.item2 .title{
+  color: #f00;
+  font-size: 36px;
+  font-weight: 600;
+}
