@@ -1,16 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as appAction from '../actions/appAction';
 import Header from './header/index';
 import './App.css';
 import favicon from '../img/favicon.ico';
 
-class App extends React.PureComponent {
+export default class App extends React.PureComponent {
     render() {
-        // console.log('App', this.props)
+        console.log('App', this.props)
         const { appAction } = this.props;
         return(
             <div className="App">
@@ -27,17 +23,3 @@ class App extends React.PureComponent {
         )
     }
 }
-
-function stateToProps (state) {
-    return {
-        menuItems: state.appReducer.menuItem,
-    };
-}
-
-function dispatchToProps(dispatch) {
-    return {
-        appAction: bindActionCreators(appAction, dispatch),
-    };
-}
-
-export default connect(stateToProps, dispatchToProps)(App);
