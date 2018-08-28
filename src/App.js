@@ -24,7 +24,7 @@ export default class App extends React.PureComponent {
 
     render() {
         console.log('App', this.props)
-        const { menuBlock, props: {appAction} } = this;
+        const { menuBlock, props: {appAction, menuItems} } = this;
         return(
             <div className="App">
                 <Head>
@@ -34,7 +34,7 @@ export default class App extends React.PureComponent {
                     <link rel="icon" type="image/x-icon" href={favicon} />
                 </Head>
                 <div className="container">
-                    <Header setMenuItem={appAction.setMenuItem}/>
+                    <Header setMenuItem={appAction.setMenuItem} currentItem={menuItems}/>
                 </div>
                 <div>
                     {menuBlock()}

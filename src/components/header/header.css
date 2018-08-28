@@ -27,7 +27,7 @@
     margin: auto;
 }
 
-.temp_item{
+.temp_item {
     float: left;
     position: relative;
     color: #ffffff;
@@ -38,15 +38,19 @@
     transition: all .3s;
 }
 
-    .temp_item:hover{
+    .temp_item:hover {
         background: #000;
         transition: all .3s;
     }
 
-    .temp_item .title{
+    .temp_item .title {
         text-align: center;
         width: 100%;
         line-height: 80px;
         font-size: 20px;
+    }
+
+    .temp_item .title.true {
+        color: #61DAFB;
     }
 

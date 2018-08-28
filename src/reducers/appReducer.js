@@ -1,5 +1,5 @@
 const initialState = {
-    menuItem: 'VIDEOS',
+    menuItem: 'ITEM1',
 };
 
 export default function userstate(state = initialState, action) {
