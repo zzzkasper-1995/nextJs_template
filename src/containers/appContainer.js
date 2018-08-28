@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as appAction from '../actions/appAction';
-import App from '../components/App';
+import App from '../App';
 
 function stateToProps (state) {
     return {

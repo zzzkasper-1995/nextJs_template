@@ -4,5 +4,3 @@ export function setMenuItem(item) {
         payload: item,
     };
 }
-
-export const init = () => ({ type: 'APP_INIT' })

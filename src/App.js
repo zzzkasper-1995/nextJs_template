@@ -1,12 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from './header/index';
+import Header from './components/header';
 import './App.css';
-import favicon from '../img/favicon.ico';
+import favicon from './img/favicon.ico';
 
 export default class App extends React.PureComponent {
     render() {
-        console.log('App', this.props)
+        // console.log('App', this.props)
         const { appAction } = this.props;
         return(
             <div className="App">
