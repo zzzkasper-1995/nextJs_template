@@ -1,5 +1,7 @@
+import { ITEM_NAME } from '../util/constants'
+
 const initialState = {
-    menuItem: 'ITEM1',
+    menuItem: ITEM_NAME.ITEM1,
 }
 
 export default function userstate(state = initialState, action) {

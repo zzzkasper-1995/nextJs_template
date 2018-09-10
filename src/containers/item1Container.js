@@ -1,18 +1,19 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import * as appAction from '../actions/appAction'
-import App from '../App'
+import * as item1Action from '../actions/item1Action'
+import Item1 from '../components/item1'
+import { carListSelector } from '../selectors/item1-selectors'
 
 function stateToProps(state) {
     return {
-        menuItems: state.appReducer.menuItem,
+        carList: carListSelector(state),
     }
 }
 
 function dispatchToProps(dispatch) {
     return {
-        appAction: bindActionCreators(appAction, dispatch),
+        addCar: bindActionCreators(item1Action, dispatch).addCar,
     }
 }
 
-export default connect(stateToProps, dispatchToProps)(App)
+export default connect(stateToProps, dispatchToProps)(Item1)

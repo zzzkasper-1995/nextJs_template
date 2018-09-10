@@ -11,7 +11,7 @@ function stateToProps(state) {
 
 function dispatchToProps(dispatch) {
     return {
-        appAction: bindActionCreators(appAction, dispatch),
+        setMenuItem: bindActionCreators(appAction, dispatch).setMenuItem,
     }
 }
 

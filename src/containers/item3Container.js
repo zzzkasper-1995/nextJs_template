@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as appAction from '../actions/appAction'
-import App from '../App'
+import Item3 from '../components/item3'
 
 function stateToProps(state) {
     return {
@@ -15,4 +15,4 @@ function dispatchToProps(dispatch) {
     }
 }
 
-export default connect(stateToProps, dispatchToProps)(App)
+export default connect(stateToProps, dispatchToProps)(Item3)

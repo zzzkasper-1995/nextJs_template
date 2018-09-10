@@ -1,5 +1,5 @@
 export const ITEM_NAME = {
-    ITEM1: 'item1',
-    ITEM2: 'item2',
-    ITEM3: 'item3',
+    ITEM1: 'ITEM1',
+    ITEM2: 'ITEM2',
+    ITEM3: 'ITEM3',
 }

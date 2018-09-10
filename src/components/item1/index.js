@@ -1,17 +1,24 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import './style.css'
 
-class Item1 extends PureComponent {
-    render() {
-        const { title } = this.props
-        return (
-            <div className="item1">
-                <div className="title">
-                    {title}
-                </div>
-            </div>
-        )
-    }
-}
+const showCars = carList => carList.map(car => (
+    <li key={car}>
+        {car}
+    </li>
+))
 
-export default Item1
+export default (props) => {
+    console.log(props)
+    const { title, carList } = props
+    return (
+        <div className="item1">
+            <div className="title">
+                {title}
+            </div>
+            <ul>
+                {//showCars(carList)
+                }
+            </ul>
+        </div>
+    )
+}
