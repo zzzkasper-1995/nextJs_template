@@ -1,11 +1,13 @@
+import { ITEM_NAME } from '../util/constants'
+
 const initialState = {
-    carList: [],
+    menuItem: ITEM_NAME.CARS,
 }
 
 export default function userstate(state = initialState, action) {
     switch (action.type) {
-    case 'ADD_CAR':
-        return { ...state, carList: [...state.carList, action.payload] }
+    case 'SET_MENU_ITEM':
+        return { ...state, menuItem: action.payload }
     default:
         return state
     }

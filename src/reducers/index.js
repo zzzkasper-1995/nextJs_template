@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux'
-import headerReducer from './headerReducer'
-import appReducer from './appReducer'
-import item1Reducer from './item1Reducer'
-import item2Reducer from './item2Reducer'
-import item3Reducer from './item3Reducer'
+import headerReducer from './header-reducer'
+import appReducer from './app-reducer'
+import carsReducer from './cars-reducer'
+import item2Reducer from './item2-reducer'
+import item3Reducer from './item3-reducer'
 
 export default combineReducers({
     headerReducer,
     appReducer,
-    item1Reducer,
+    carsReducer,
     item2Reducer,
     item3Reducer,
 })

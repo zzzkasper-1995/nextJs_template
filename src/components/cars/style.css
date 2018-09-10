@@ -1,0 +1,22 @@
+.cars {
+    margin: 20px;
+  }
+
+  .cars .title{
+    color: #0f0;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+.searchBox {
+  display: inline-block;
+}
+
+.searchBox .buttonAdd{
+  cursor: pointer;
+  display: inline-block;
+  height: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #61DAFB;
+}

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import * as appAction from '../actions/appAction'
-import App from '../App'
+import * as appAction from '../actions/app-action'
+import Item3 from '../components/item3'
 
 function stateToProps(state) {
     return {
@@ -11,8 +11,8 @@ function stateToProps(state) {
 
 function dispatchToProps(dispatch) {
     return {
-        setMenuItem: bindActionCreators(appAction, dispatch).setMenuItem,
+        appAction: bindActionCreators(appAction, dispatch),
     }
 }
 
-export default connect(stateToProps, dispatchToProps)(App)
+export default connect(stateToProps, dispatchToProps)(Item3)
