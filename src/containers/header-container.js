@@ -5,9 +5,8 @@ import Header from '../components/header'
 import { menuItemsSelector } from '../selectors/header-selectors'
 
 function stateToProps(state) {
-    console.log('state', state)
     return {
-        menuItems: menuItemsSelector(state),
+        menuItem: menuItemsSelector(state),
     }
 }
 

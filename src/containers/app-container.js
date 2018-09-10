@@ -5,7 +5,6 @@ import App from '../App'
 import { menuItemsSelector } from '../selectors/app-selectors'
 
 function stateToProps(state) {
-    console.log('app-сщте', state)
     return {
         menuItem: menuItemsSelector(state),
     }

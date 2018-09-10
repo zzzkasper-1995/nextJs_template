@@ -8,10 +8,10 @@ import Item2 from './containers/item2-container'
 import Item3 from './containers/item3-container'
 import { ITEM_NAME } from './util/constants'
 
-export default class App extends React.PureComponent {
+export default class App extends React.Component {
     menuBlock = () => {
-        const { menuItems } = this.props
-        switch (menuItems) {
+        const { menuItem } = this.props
+        switch (menuItem) {
         case ITEM_NAME.CARS:
             return <Cars title="Cars" />
         case ITEM_NAME.ITEM2:
@@ -24,7 +24,6 @@ export default class App extends React.PureComponent {
     }
 
     render() {
-        console.log('App', this.props)
         const { menuBlock } = this
         return (
             <div className="App">
