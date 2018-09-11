@@ -1,3 +1,7 @@
+/**
+ * carList - список авто
+ * addingCar - наименование добавляемого авто
+ */
 const initialState = {
     carList: ['Audi', 'Lada'],
     addingCar: '',

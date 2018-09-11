@@ -1,5 +1,8 @@
 import { ITEM_NAME } from '../util/constants'
 
+/**
+ * menuItem - текущий выбранный раздел меню навигации
+ */
 const initialState = {
     menuItem: ITEM_NAME.CARS,
 }
