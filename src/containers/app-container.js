@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import * as appAction from '../actions/app-action'
+import * as appAction from '../reducers/app-reducer'
 import App from '../App'
 import { menuItemsSelector } from '../selectors/app-selectors'
 

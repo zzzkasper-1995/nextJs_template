@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import * as carsAction from '../actions/cars-action'
+import * as carsAction from '../reducers/cars-reducer'
 import Cars from '../components/cars'
 import { carListSelector } from '../selectors/cars-selectors'
 
