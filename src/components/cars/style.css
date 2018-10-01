@@ -8,11 +8,11 @@
     font-weight: 600;
   }
 
-.searchBox {
+.addBox {
   display: inline-block;
 }
 
-.searchBox .buttonAdd{
+.addBox .buttonAdd{
   cursor: pointer;
   display: inline-block;
   height: 26px;

@@ -20,14 +20,14 @@ export default (props) => {
             <div className="title">
                 {title}
             </div>
-            <div className="searchBox">
+            <div className="addBox">
                 <input
                     type="text"
-                    id="searchBox"
+                    id="addBox"
                     className="search_filter"
                     onChange={onChangeCar(editAddingCar)}
                 />
-                <label htmlFor="seachBox" />
+                <label htmlFor="addBox" />
                 <div className="buttonAdd" onClick={handleClickAdd(addCar)}>
                     Добавить
                 </div>
