@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start",
     "test": "jest"
@@ -11,6 +11,7 @@
   "devDependencies": {},
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
+    "express": "^4.16.3",
     "fs": "^0.0.1-security",
     "isomorphic-unfetch": "^2.1.1",
     "jest": "^23.5.0",
@@ -18,20 +19,20 @@
     "mkdir": "^0.0.2",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.21",
-    "puppeteer": "^1.7.0",
-    "react": "^16.4.2",
-    "react-addons-update": "^15.6.2",
     "next": "^6.1.1",
     "next-images": "^0.10.6",
     "next-redux-wrapper": "^2.0.0",
+    "puppeteer": "^1.7.0",
+    "react": "^16.4.2",
+    "react-addons-update": "^15.6.2",
     "react-dom": "^16.4.2",
+    "react-moment": "^0.7.9",
     "react-redux": "^5.0.1",
+    "recompose": "^0.28.2",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.1.0",
-    "react-moment": "^0.7.9",
-    "recompose": "^0.28.2",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.1.0",
     "reselect": "^3.0.1",
     "socket.io-client": "^2.1.1"
   }
